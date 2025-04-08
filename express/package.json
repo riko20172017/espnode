@@ -1,0 +1,20 @@
+{
+    "name": "express",
+    "description": "node with esp32 and mosquitto",
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [
+      "nodejs",
+      "express",
+      "docker",
+      "esp32",
+      "mosquitto"
+    ],
+    "dependencies": {
+      "express": "^4.16.4"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon -L index.js"
+    }
+  }

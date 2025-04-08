@@ -1,0 +1,19 @@
+services:
+  express:
+    build: ./express
+    container_name: express
+    restart: always
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./express:/app/express
+      - ./express/node_modules:/app/node_modules
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: mosquitto
+    ports:
+      - 1883:1883
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
