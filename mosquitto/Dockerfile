@@ -1,3 +1,4 @@
 FROM eclipse-mosquitto:2
-COPY . ./
+WORKDIR /mosquitto
+COPY . .
 EXPOSE 1883

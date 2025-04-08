@@ -1,6 +1,6 @@
 FROM node:19-alpine
 RUN npm install -g nodemon
-WORKDIR /app
+WORKDIR /express
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . ./
