@@ -2,7 +2,7 @@ const express = require("express"); // подключаем фреймворк E
 const mqtt = require("mqtt");
 
 const protocol = "mqtt";
-const host = "192.168.0.13";
+const host = "178.208.65.214";
 const portMqtt = "1883";
 const clientId = `mqtt_${Math.random().toString(16).slice(3)}`;
 
