@@ -66,6 +66,8 @@ services:
       - WORDPRESS_DB_NAME=wordpress
       - WP_HOME=https://gerara.ru
       - WP_SITEURL=https://gerara.ru
+      - WP_DEBUG=1
+      - WP_DEBUG_LOG=1
     volumes:
       - wordpress:/var/www/html
       - ./wp/wp-config.php:/var/www/html/wp-config.php
